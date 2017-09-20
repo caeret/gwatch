@@ -1,0 +1,7 @@
+package: github.com/gaemma/gwatch
+import:
+- package: github.com/rjeczalik/notify
+- package: gopkg.in/alecthomas/kingpin.v2
+  version: ~2.2.5
+- package: github.com/BurntSushi/toml
+  version: ~0.3.0

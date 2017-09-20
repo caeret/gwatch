@@ -1,0 +1,6 @@
+dir = "./demo"
+excludes = ["./demo/.git", "./demo/.idea"]
+recursive = true
+command = "ls"
+execute_at_ready = true
+delay = 2
