@@ -21,22 +21,18 @@ The configuration file should be in `toml` format, for example `gwatch.toml`:
 dir = "./demo"
 excludes = ["./demo/.git", "./demo/.idea"]
 recursive = true
-command = "ls"
+command = "rsync src dest"
 execute_at_ready = true
 delay = 2
 ```
 
 ## Example usage
 
-Executing `gwatch` with `gwatch.toml` in work dir:
-
-```
-gwatch
-````
-
-Executing `gwatch` with specified configuration file:
+Executing `gwatch` with custom configuration file:
 
 ```
 gwatch -c /path/to/config.toml
 ```
+
+If `-c` option is not specified, `gwatch` will check if `gwatch.toml` exists in work dir and use it.
 
