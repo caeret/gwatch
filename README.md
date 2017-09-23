@@ -23,8 +23,22 @@ excludes = ["./demo/.git", "./demo/.idea"]
 recursive = true
 command = "rsync src dest"
 execute_at_ready = true
+init = true
 delay = 2
 ```
+
+Command line flags:
+
+```
+Flags:
+      --help                 Show context-sensitive help (also try --help-long and --help-man).
+  -d, --dir=DIR              directory to watch.
+  -e, --exclude=EXCLUDE ...  exclude diretory or files.
+  -r, --recursive            recursively watch subdirectories.
+  -i, --init                 execute the command immedialtely while the gwatch is ready.
+      --delay=DELAY          duration delay to execute the command.
+  -c, --config=CONFIG        config path.
+  ```
 
 ## Example usage
 
